@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css" />
+  
+  <title>Algorithm Visualizer | Path Finder</title>
+  </head>
+  <body>
+    <div id="header">
+      <div id="headerLeft">
+        <div class="headerLeftContent">
+          <div class="slidecontainer">
+            <div class="speedValue">Speed<p></p></div>
+            <input type="range" min="-400" max="540" value="70" class="slider" id="speedSlider" />
+          </div>
+          
+        </div>
+      </div>
+      <a href="/index.html"><div id="title"></div></a>
+      <div id="header-right">
+        <div>
+          <select id="algorithm_type" name="sort_type">
+            <option value="dijkstra" selected>Dijkstra's Algorithm</option>
+            <option value="Astar">A* Search algorithm</option>
+            <option value="bfs">BFS(Breadth first search)</option>
+            <option value="dfs">DFS(Depth first search)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div id="container"></div>
+    <div id="buttonsdiv">
+      <button type="button" id="visualizeButton" class="button">Visualize</button>
+      <button type="button" id="clearButton" class="button">Clear Grid</button>
+    </div>
+    <script src="./script.js"></script>
+
+  </body>
+</html>
